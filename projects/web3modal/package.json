@@ -1,0 +1,15 @@
+{
+  "name": "@dorgtech/web3modal-angular",
+  "license": "MIT",
+  "author": "dOrg, Minds",
+  "description": "Web3Modal implementation for Angular",
+  "version": "1.0.5",
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "@dorgtech/web3modal-ts": "^1.0.0"
+  }
+}
