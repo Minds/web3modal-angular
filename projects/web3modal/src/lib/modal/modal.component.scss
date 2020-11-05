@@ -6,14 +6,14 @@ m-modal {
     left: 0;
     position: fixed;
     cursor: pointer;
-    z-index: 9999995;
+    z-index: 99999991;
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   .m-modal-container {
     position: fixed;
     margin: auto;
-    z-index: 9999999;
+    z-index: 99999995;
 
     width: 800px;
     max-width: 100%;
