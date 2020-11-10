@@ -5,7 +5,7 @@ import {
   IProviderControllerOptions,
   Web3WalletConnector,
   IProviderUserOptions
-} from '@dorgtech/web3modal-ts';
+} from '@mindsorg/web3modal-ts';
 import { take } from 'rxjs/operators';
 
 @Injectable()

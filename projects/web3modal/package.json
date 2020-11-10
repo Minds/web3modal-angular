@@ -1,7 +1,7 @@
 {
-  "name": "@dorgtech/web3modal-angular",
+  "name": "@mindsorg/web3modal-angular",
   "description": "Web3Modal implementation for Angular",
-  "version": "1.2.2",
+  "version": "1.2.5",
   "homepage": "https://gitlab.com/minds/web3modal-angular",
   "repository": {
     "type": "git",
@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "@dorgtech/web3modal-ts": "^1.2.2"
+    "@mindsorg/web3modal-ts": "^1.2.2"
   }
 }
