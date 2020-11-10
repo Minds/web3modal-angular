@@ -6,7 +6,6 @@ import {
   Web3WalletConnector,
   IProviderUserOptions
 } from '@dorgtech/web3modal-ts';
-import { Subject } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 @Injectable()
@@ -23,34 +22,27 @@ export class Web3ModalService {
   async open() {
     this.providers.next(this.web3WalletConnector.providers)
 
-    const onSuccess$: Subject<any> = new Subject();
+    return await new Promise((resolve, reject) => {
+      this.web3WalletConnector.providerController.on(CONNECT_EVENT, provider => {
+        resolve(provider);
+      });
+  
+      this.web3WalletConnector.providerController.on(ERROR_EVENT, error => {
+        reject(error);
+      });
 
-    this.web3WalletConnector.providerController.on(CONNECT_EVENT, provider => {
-      onSuccess$.next(provider);
-      onSuccess$.complete();
-      this.close()
-    });
+      this.shouldOpen.next(true)
 
-    this.web3WalletConnector.providerController.on(ERROR_EVENT, error => {
-      onSuccess$.error(error);
-      this.close()
-    });
-
-    this.shouldOpen.next(true)
-
-    this.shouldOpen.pipe(take(1)).subscribe({
-      next: (open) => {
-        if (!open && !onSuccess$.isStopped) {
-          onSuccess$.error('Dismissed modal');
+      this.shouldOpen.pipe(take(1)).subscribe({
+        next: (open) => {
+          if (!open) {
+            reject('Dismissed modal');
+          }
         }
-      }
+      })
+    }).finally(() => {
+      this.close()
     })
-
-    if (!this.shouldOpen && !onSuccess$.isStopped) {
-      onSuccess$.error('Dismissed modal');
-    }
-
-    return onSuccess$.toPromise();
   }
 
   setConfiguration(options: IProviderControllerOptions) {
@@ -67,9 +59,5 @@ export class Web3ModalService {
 
   close() {
     this.shouldOpen.next(false)
-  }
-  
-  _() {
-
   }
 }

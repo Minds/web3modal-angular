@@ -1,15 +1,38 @@
 {
   "name": "@dorgtech/web3modal-angular",
-  "license": "MIT",
-  "author": "dOrg, Minds",
   "description": "Web3Modal implementation for Angular",
-  "version": "1.0.5",
+  "version": "1.2.2",
+  "homepage": "https://gitlab.com/minds/web3modal-angular",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/minds/web3modal-angular.git"
+  },
+  "keywords": [
+    "web3",
+    "crypto",
+    "ethereum",
+    "web3modal",
+    "metamask",
+    "walletconnect",
+    "squarelink",
+    "portis",
+    "fortmatic",
+    "arkane",
+    "torus",
+    "authereum",
+    "walletlink",
+    "web3modal-ts",
+    "angular",
+    "web3modal-angular"
+  ],
+  "author": "Minds & dOrg",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
     "@angular/core": "^10.1.6"
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "@dorgtech/web3modal-ts": "^1.0.0"
+    "@dorgtech/web3modal-ts": "^1.2.2"
   }
 }
