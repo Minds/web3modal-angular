@@ -24,7 +24,7 @@
     "@walletconnect/web3-provider": "^1.3.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "@dorgtech/web3modal-angular": "^1.0.3",
+    "@mindsorg/web3modal-angular": "^1.0.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

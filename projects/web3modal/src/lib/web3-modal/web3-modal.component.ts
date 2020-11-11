@@ -1,6 +1,6 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IProviderUserOptions } from '@dorgtech/web3modal-ts';
+import { IProviderUserOptions } from '@mindsorg/web3modal-ts';
 import { Web3ModalService } from './web3-modal.service';
 
 @Component({
