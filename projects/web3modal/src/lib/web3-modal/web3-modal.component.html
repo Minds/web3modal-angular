@@ -19,6 +19,16 @@
       <div class="m-web3ModalBody__provider">
         <div
           class="m-web3ModalProvider__body"
+          *ngIf="providers && showMetamaskDownload"
+          (click)="openMetamaskDownloadPage()"
+        >
+          <div class="m-web3ModalProviderBody__icon">
+            <img src="metamask.svg" alt="metamask.svg" />
+          </div>
+          <div class="m-web3ModalProviderBody__name">MetaMask</div>
+        </div>
+        <div
+          class="m-web3ModalProvider__body"
           *ngFor="let provider of providers"
           (click)="provider.onClick()"
         >
