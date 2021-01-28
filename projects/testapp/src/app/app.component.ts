@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Web3ModalService } from 'web3modal-angular';
+import { Web3ModalService } from '@mindsorg/web3modal-angular';
 import WalletConnectProvider from '@walletconnect/web3-provider';
-import Torus from '@toruslabs/torus-embed'
-import Portis from '@portis/web3'
+import Torus from '@toruslabs/torus-embed';
+import Portis from '@portis/web3';
 
 @Component({
   selector: 'app-root',
@@ -38,9 +38,6 @@ export class AppComponent {
       network: '',
     });
 
-    console.log(this.web3ModalService)
-    
-    const provider = await this.web3ModalService.open()
-    console.log(provider)
+    await this.web3ModalService.open();
   }
 }
