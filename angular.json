@@ -36,9 +36,7 @@
               "projects/web3modal/tsconfig.lib.json",
               "projects/web3modal/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -63,9 +61,7 @@
               "projects/testapp/src/favicon.ico",
               "projects/testapp/src/assets"
             ],
-            "styles": [
-              "projects/testapp/src/styles.css"
-            ],
+            "styles": ["projects/testapp/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -127,9 +123,7 @@
               "projects/testapp/src/favicon.ico",
               "projects/testapp/src/assets"
             ],
-            "styles": [
-              "projects/testapp/src/styles.css"
-            ],
+            "styles": ["projects/testapp/src/styles.css"],
             "scripts": []
           }
         },
@@ -141,9 +135,7 @@
               "projects/testapp/tsconfig.spec.json",
               "projects/testapp/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -159,6 +151,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "web3modal"
 }
