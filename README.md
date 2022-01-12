@@ -115,6 +115,23 @@ const providerOptions = {
 };
 ```
 
+### Development Troubleshooting
+
+If you experience issues using `npm link` for development, you can manually create a symbolic link in the node_modules folder.
+
+```
+# In your project front-end - e.g. minds/front
+cd node_modules/@mindsorg
+
+# Optional - make a copy of the existing module to save having to reinstall later. 
+mv web3modal-angular .web3modal-angular
+
+# Adjust the path below to point to the dist folder
+ln -s ../../../web3modal-angular/dist/web3modal/ web3modal-angular
+```
+
+Now when you go into the web3modal-angular's folder, you can run `npm build` and changes to the web3 modal will be be built.
+
 ## License
 
 MIT
