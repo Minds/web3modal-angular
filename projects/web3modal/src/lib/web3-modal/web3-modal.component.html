@@ -22,8 +22,8 @@
           *ngIf="providers && showMetamaskDownload"
           (click)="openMetamaskDownloadPage()"
         >
-          <div class="m-web3ModalProviderBody__icon">
-            <img src="metamask.svg" alt="metamask.svg" />
+          <div class="m-web3ModalProviderBody__icon--custom">
+            <m-web3-modal-metamask-logo></m-web3-modal-metamask-logo>
           </div>
           <div class="m-web3ModalProviderBody__name">MetaMask</div>
         </div>
@@ -48,5 +48,5 @@
         </p>
       </div>
     </div>
-  </div>  
+  </div>
 </m-modal>
