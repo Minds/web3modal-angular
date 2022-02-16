@@ -5,10 +5,6 @@
     "entryFile": "src/public-api.ts"
   },
   "allowedNonPeerDependencies": [
-    "tslib",
-    "@mindsorg/web3modal-ts"
-  ],
-  "assets": [
-    "./assets"
+    "tslib"
   ]
 }

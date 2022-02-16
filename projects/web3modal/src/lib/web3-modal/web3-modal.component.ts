@@ -1,12 +1,6 @@
-import {
-  Component,
-  Input,
-  OnDestroy,
-  OnInit,
-  ViewEncapsulation,
-} from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IProviderUserOptions } from '@mindsorg/web3modal-ts';
+import { IProviderUserOptions } from '../web3modal-ts/src';
 import { Web3ModalService } from './web3-modal.service';
 
 @Component({
