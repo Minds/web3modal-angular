@@ -7,5 +7,8 @@
   "allowedNonPeerDependencies": [
     "tslib",
     "@mindsorg/web3modal-ts"
+  ],
+  "assets": [
+    "./assets"
   ]
 }
