@@ -8,8 +8,10 @@
     "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "copy:logos": "copyfiles -u 3 ./src/lib/web3modal-ts/providers/logos/** ./dist/web3modal/esm2015/lib/web3modal-ts/providers/s/logos"
   },
+  "main": "dist/web3modal",
   "dependencies": {
     "@angular/animations": "^12.1.3",
     "@angular/common": "^12.1.3",
@@ -22,6 +24,7 @@
     "@portis/web3": "^2.0.0-beta.59",
     "@toruslabs/torus-embed": "^1.11.0",
     "@walletconnect/web3-provider": "^1.3.1",
+    "copyfiles": "^2.4.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "^0.11.4"

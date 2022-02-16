@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git+https://gitlab.com/minds/web3modal-angular.git"
   },
+  "main": "../../dist/web3modal",
   "keywords": [
     "web3",
     "crypto",
@@ -32,7 +33,6 @@
     "@angular/core": "^12.1.3"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
-    "@mindsorg/web3modal-ts": "^1.2.2"
+    "tslib": "^2.0.0"
   }
 }

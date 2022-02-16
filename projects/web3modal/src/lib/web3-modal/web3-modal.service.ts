@@ -5,7 +5,7 @@ import {
   IProviderControllerOptions,
   Web3WalletConnector,
   IProviderUserOptions
-} from '@mindsorg/web3modal-ts';
+} from '../web3modal-ts';
 import { take } from 'rxjs/operators';
 
 @Injectable()
@@ -26,7 +26,7 @@ export class Web3ModalService {
       this.web3WalletConnector.providerController.on(CONNECT_EVENT, provider => {
         resolve(provider);
       });
-  
+
       this.web3WalletConnector.providerController.on(ERROR_EVENT, error => {
         reject(error);
       });
