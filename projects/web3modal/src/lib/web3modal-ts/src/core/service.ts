@@ -1,8 +1,4 @@
-import {
-  IProviderControllerOptions,
-  IProviderUserOptions,
-  ProviderController,
-} from "..";
+import { IProviderControllerOptions, IProviderUserOptions, ProviderController } from '..';
 
 export class Web3WalletConnector {
   public providers: IProviderUserOptions[] = [];

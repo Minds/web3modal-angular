@@ -83,7 +83,14 @@ const web3provider = new Web3Provider(provider)
 
 Web3Modal-TS supports the original Web3modal's Metamask WalletConnect, Fortmatic, Torus, Authereum, UniLogin, BurnerConnect, Portis, Squarelink, Arkane, Mew Connect protocol, D'CENT Wallet and Bitski. See [Web3Modal's provider options](https://github.com/Web3Modal/web3modal#provider-options)
 
-Additionally, it supports:
+Additionally, it supports the overriding of logo urls by including a logoUrl in the provider options of the configuration.
+
+```ts
+const providerOptions = {
+  ...,
+  logoUrl: 'https:///logo.jpg', // optional url to override logo
+}
+```
 
 ### WalletLink
 
@@ -111,7 +118,8 @@ const providerOptions = {
       appLogoUrl: "https://example.com/logo.png",
       darkMode: false
     },
-  },
+    logoUrl: 'https://logo-url-override/logo.png', // optional url to override logo
+  }
 };
 ```
 

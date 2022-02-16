@@ -3,7 +3,7 @@ import { IProviderInfo } from '../../helpers';
 export const FALLBACK: IProviderInfo = {
   id: 'injected',
   name: 'Web3',
-  logo: new URL('../logos/web3-default.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/web3-default.svg',
   type: 'injected',
   check: 'isWeb3',
 };
@@ -11,7 +11,7 @@ export const FALLBACK: IProviderInfo = {
 export const METAMASK: IProviderInfo = {
   id: 'injected',
   name: 'MetaMask',
-  logo: new URL('/assets/metamask.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/metamask.svg',
   type: 'injected',
   check: 'isMetaMask',
 };
@@ -19,7 +19,7 @@ export const METAMASK: IProviderInfo = {
 export const SAFE: IProviderInfo = {
   id: 'injected',
   name: 'Safe',
-  logo: new URL('../logos/safe.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/safe.svg',
   type: 'injected',
   check: 'isSafe',
 };
@@ -27,7 +27,7 @@ export const SAFE: IProviderInfo = {
 export const NIFTY: IProviderInfo = {
   id: 'injected',
   name: 'Nifty',
-  logo: new URL('../logos/niftyWallet.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/niftyWallet.png',
   type: 'injected',
   check: 'isNiftyWallet',
 };
@@ -35,7 +35,7 @@ export const NIFTY: IProviderInfo = {
 export const DAPPER: IProviderInfo = {
   id: 'injected',
   name: 'Dapper',
-  logo: new URL('../logos/dapper.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/dapper.png',
   type: 'injected',
   check: 'isDapper',
 };
@@ -43,7 +43,7 @@ export const DAPPER: IProviderInfo = {
 export const OPERA: IProviderInfo = {
   id: 'injected',
   name: 'Opera',
-  logo: new URL('../logos/opera.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/opera.svg',
   type: 'injected',
   check: 'isOpera',
 };
@@ -51,7 +51,7 @@ export const OPERA: IProviderInfo = {
 export const TRUST: IProviderInfo = {
   id: 'injected',
   name: 'Trust',
-  logo: new URL('../logos/trust.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/trust.svg',
   type: 'injected',
   check: 'isTrust',
 };
@@ -59,7 +59,7 @@ export const TRUST: IProviderInfo = {
 export const COINBASE: IProviderInfo = {
   id: 'injected',
   name: 'Coinbase',
-  logo: new URL('../logos/coinbase.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/coinbase.svg',
   type: 'injected',
   check: 'isToshi',
 };
@@ -67,7 +67,7 @@ export const COINBASE: IProviderInfo = {
 export const CIPHER: IProviderInfo = {
   id: 'injected',
   name: 'Cipher',
-  logo: new URL('../logos/cipher.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/cipher.svg',
   type: 'injected',
   check: 'isCipher',
 };
@@ -75,7 +75,7 @@ export const CIPHER: IProviderInfo = {
 export const IMTOKEN: IProviderInfo = {
   id: 'injected',
   name: 'imToken',
-  logo: new URL('../logos/imtoken.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/imtoken.svg',
   type: 'injected',
   check: 'isImToken',
 };
@@ -83,7 +83,7 @@ export const IMTOKEN: IProviderInfo = {
 export const STATUS: IProviderInfo = {
   id: 'injected',
   name: 'Status',
-  logo: new URL('../logos/status.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/status.svg',
   type: 'injected',
   check: 'isStatus',
 };
@@ -91,7 +91,7 @@ export const STATUS: IProviderInfo = {
 export const TOKENARY: IProviderInfo = {
   id: 'injected',
   name: 'Tokenary',
-  logo: new URL('../logos/tokenary.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/tokenary.png',
   type: 'injected',
   check: 'isTokenary',
 };

@@ -1,7 +1,7 @@
 {
   "name": "@mindsorg/web3modal-angular",
   "description": "Web3Modal implementation for Angular",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "homepage": "https://gitlab.com/minds/web3modal-angular",
   "repository": {
     "type": "git",

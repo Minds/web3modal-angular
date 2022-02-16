@@ -1,25 +1,20 @@
 import * as list from '../providers';
+import { CACHED_PROVIDER_KEY, CONNECT_EVENT, ERROR_EVENT, INJECTED_PROVIDER_ID } from '../constants';
 import {
-  CONNECT_EVENT,
-  ERROR_EVENT,
-  INJECTED_PROVIDER_ID,
-  CACHED_PROVIDER_KEY,
-} from '../constants';
-import {
-  isMobile,
-  IProviderControllerOptions,
-  IProviderOptions,
-  IProviderDisplayWithConnector,
-  getLocal,
-  setLocal,
-  removeLocal,
-  getProviderInfoById,
-  getProviderDescription,
-  IProviderInfo,
   filterMatches,
-  IProviderUserOptions,
-  getInjectedProvider,
   findMatchingRequiredOptions,
+  getInjectedProvider,
+  getLocal,
+  getProviderDescription,
+  getProviderInfoById,
+  IProviderControllerOptions,
+  IProviderDisplayWithConnector,
+  IProviderInfo,
+  IProviderOptions,
+  IProviderUserOptions,
+  isMobile,
+  removeLocal,
+  setLocal,
 } from '../helpers';
 import { EventController } from './events';
 
@@ -120,7 +115,6 @@ export class ProviderController {
 
   public getUserOptions = () => {
     const mobile = isMobile();
-
     const defaultProviderList = this.providers.map(({ id }) => id);
 
     const displayInjected =
@@ -151,7 +145,10 @@ export class ProviderController {
     providerList.forEach((id: string) => {
       let provider = this.getProvider(id);
       if (typeof provider !== 'undefined') {
-        const { id, name, logo, connector } = provider;
+        let { id, name, logo, connector } = provider;
+
+        // replace logo with configuration set logo, use default as fallback.
+        logo = this.providerOptions[id]?.logoUrl ?? logo;
         userOptions.push({
           name,
           logo,

@@ -1,13 +1,11 @@
 import { IProviderInfo } from '../../helpers';
-// @ts-ignore
-// import WalletConnectLogo from 'assets/walletconnect-circle.svg';
 
 export * from '../injected';
 
 export const WALLETCONNECT: IProviderInfo = {
   id: 'walletconnect',
   name: 'WalletConnect',
-  logo: "",
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/walletconnect-circle.svg',
   type: 'qrcode',
   check: 'isWalletConnect',
   package: {
@@ -18,7 +16,7 @@ export const WALLETCONNECT: IProviderInfo = {
 export const WALLETLINK: IProviderInfo = {
   id: 'walletlink',
   name: 'Coinbase',
-  logo: new URL('../logos/coinbase.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/coinbase.svg',
   type: 'qrcode',
   check: 'isWalletLink',
   package: {
@@ -29,7 +27,7 @@ export const WALLETLINK: IProviderInfo = {
 export const PORTIS: IProviderInfo = {
   id: 'portis',
   name: 'Portis',
-  logo: new URL('../logos/portis.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/portis.svg',
   type: 'web',
   check: 'isPortis',
   package: {
@@ -40,7 +38,7 @@ export const PORTIS: IProviderInfo = {
 export const FORTMATIC: IProviderInfo = {
   id: 'fortmatic',
   name: 'Fortmatic',
-  logo: new URL('../logos/fortmatic.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/fortmatic.svg',
   type: 'web',
   check: 'isFortmatic',
   package: {
@@ -51,7 +49,7 @@ export const FORTMATIC: IProviderInfo = {
 export const SQUARELINK: IProviderInfo = {
   id: 'squarelink',
   name: 'Squarelink',
-  logo: new URL('../logos/squarelink.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/squarelink.svg',
   type: 'web',
   check: 'isSquarelink',
   package: {
@@ -62,7 +60,7 @@ export const SQUARELINK: IProviderInfo = {
 export const TORUS: IProviderInfo = {
   id: 'torus',
   name: 'Torus',
-  logo: new URL('../logos/torus.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/torus.svg',
   type: 'web',
   check: 'isTorus',
 };
@@ -70,7 +68,7 @@ export const TORUS: IProviderInfo = {
 export const ARKANE: IProviderInfo = {
   id: 'arkane',
   name: 'Arkane',
-  logo: new URL('../logos/arkane.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/arkane.svg',
   type: 'web',
   check: 'isArkane',
   package: {
@@ -81,7 +79,7 @@ export const ARKANE: IProviderInfo = {
 export const AUTHEREUM: IProviderInfo = {
   id: 'authereum',
   name: 'Authereum',
-  logo: new URL('../logos/authereum.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/authereum.svg',
   type: 'web',
   check: 'isAuthereum',
 };
@@ -89,7 +87,7 @@ export const AUTHEREUM: IProviderInfo = {
 export const BURNERCONNECT: IProviderInfo = {
   id: 'burnerconnect',
   name: 'Burner Connect',
-  logo: new URL('../logos/burnerwallet.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/burnerwallet.png',
   type: 'web',
   check: 'isBurnerProvider',
 };
@@ -97,7 +95,7 @@ export const BURNERCONNECT: IProviderInfo = {
 export const UNILOGIN: IProviderInfo = {
   id: 'unilogin',
   name: 'UniLogin',
-  logo: new URL('../logos/unilogin.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/unilogin.svg',
   check: 'isUniLogin',
   type: 'web',
 };
@@ -105,7 +103,7 @@ export const UNILOGIN: IProviderInfo = {
 export const MEWCONNECT: IProviderInfo = {
   id: 'mewconnect',
   name: 'MEW wallet',
-  logo: new URL('../logos/mewwallet.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/mewwallet.png',
   type: 'qrcode',
   check: 'isMEWconnect',
   package: {
@@ -116,7 +114,7 @@ export const MEWCONNECT: IProviderInfo = {
 export const DCENT: IProviderInfo = {
   id: 'dcentwallet',
   name: "D'CENT",
-  logo: new URL('../logos/dcentwallet.png', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/dcentwallet.png',
   type: 'hardware',
   check: 'isDcentWallet',
   package: {
@@ -127,7 +125,7 @@ export const DCENT: IProviderInfo = {
 export const BITSKI: IProviderInfo = {
   id: 'bitski',
   name: 'Bitski',
-  logo: new URL('../logos/bitski.svg', import.meta.url),
+  logo: 'https://cdn-assets.minds.com/web3modal-assets/bitski.svg',
   type: 'web',
   check: 'isBitski',
   package: {
