@@ -24,5 +24,8 @@
         "dist/web3modal"
       ]
     }
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "partial"
   }
 }
