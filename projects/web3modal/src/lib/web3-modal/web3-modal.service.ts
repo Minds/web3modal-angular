@@ -1,11 +1,5 @@
 import { EventEmitter, Injectable, Optional } from '@angular/core';
-import {
-  CONNECT_EVENT,
-  ERROR_EVENT,
-  IProviderControllerOptions,
-  Web3WalletConnector,
-  IProviderUserOptions
-} from '@mindsorg/web3modal-ts';
+import { CONNECT_EVENT, ERROR_EVENT, IProviderControllerOptions, IProviderUserOptions, Web3WalletConnector } from '../web3modal-ts/src';
 import { take } from 'rxjs/operators';
 
 @Injectable()
@@ -26,7 +20,7 @@ export class Web3ModalService {
       this.web3WalletConnector.providerController.on(CONNECT_EVENT, provider => {
         resolve(provider);
       });
-  
+
       this.web3WalletConnector.providerController.on(ERROR_EVENT, error => {
         reject(error);
       });
