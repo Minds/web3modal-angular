@@ -32,6 +32,7 @@
     "@angular/core": "^13.2.3"
   },
   "dependencies": {
+    "detect-browser": "^5.3.0",
     "tslib": "^2.0.0"
   }
 }
