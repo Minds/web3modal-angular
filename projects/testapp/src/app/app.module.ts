@@ -6,16 +6,15 @@ import { AppComponent } from './app.component';
 import { Web3ModalModule, Web3ModalService, Web3ModalComponent } from '@mindsorg/web3modal-angular';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    Web3ModalModule
-  ],
-  entryComponents: [Web3ModalComponent],
-  providers: [Web3ModalService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        Web3ModalModule
+    ],
+    providers: [Web3ModalService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
