@@ -1,6 +1,5 @@
 import { ChainDataList } from '../helpers';
 
-
 export const CHAIN_DATA_LIST: ChainDataList = {
   1: {
     chainId: 1,
