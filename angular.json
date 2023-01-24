@@ -133,6 +133,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "web3modal"
+    }
+  }
 }

@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "target": "es2015",
+    "target": "es2020",
     "module": "esnext",
     "typeRoots": [
       "node_modules/@types"
