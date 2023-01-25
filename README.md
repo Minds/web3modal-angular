@@ -140,6 +140,16 @@ ln -s ../../../web3modal-angular/dist/web3modal/ web3modal-angular
 
 Now when you go into the web3modal-angular's folder, you can run `npm run build` and changes to the web3 modal will be be built.
 
+
+## Publish
+
+```sh
+npm run build
+cd dist/web3modal-angular
+# you may need to update the package.json version number
+npm publish . --verbose --access public
+```
+
 ## License
 
 MIT
