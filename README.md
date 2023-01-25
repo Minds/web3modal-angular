@@ -144,8 +144,8 @@ Now when you go into the web3modal-angular's folder, you can run `npm run build`
 ## Publish
 
 ```sh
-npm run build
-cd dist/web3modal-angular
+npm run build web3modal
+cd dist/web3modal
 # you may need to update the package.json version number
 npm publish . --verbose --access public
 ```
