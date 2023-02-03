@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "target": "es2015",
+    "target": "ES2022",
     "module": "esnext",
     "typeRoots": [
       "node_modules/@types"
@@ -23,7 +23,8 @@
         "dist/web3modal/web3modal",
         "dist/web3modal"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "compilationMode": "partial"
